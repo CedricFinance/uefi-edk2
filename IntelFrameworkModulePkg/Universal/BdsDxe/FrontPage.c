@@ -1164,8 +1164,10 @@ PlatformBdsEnterFrontPage (
     //
     UpdateFrontPageStrings ();
 
-    gCallbackKey = 0;
-    CallFrontPage ();
+    gCallbackKey = FRONT_PAGE_KEY_CONTINUE;
+    if (1==0) {
+        CallFrontPage ();
+    }
 
     //
     // If gCallbackKey is greater than 1 and less or equal to 5,
